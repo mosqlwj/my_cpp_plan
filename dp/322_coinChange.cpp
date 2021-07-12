@@ -6,9 +6,18 @@
 class Solution {
 public:
     // 1. recursion
-    int coinChange1(vector<int>& coins, int amount) {
-
-    }
+    // exceed time limit
+//    int coinChange(vector<int>& coins, int amount) {
+//        if (amount == 0) return 0;
+//        if (amount < 0) return -1;
+//        int res = INT_MAX;
+//        for (auto coin : coins) {
+//            int tmp = coinChange(coins, amount - coin);
+//            if (tmp == -1) continue;
+//            res = min(res, 1 + tmp);
+//        }
+//        return res != INT_MAX ? res : -1;
+//    }
     // 2 .dp
     int coinChange(vector<int>& coins, int amount) {
         vector<int> dp(amount + 1, amount + 1);

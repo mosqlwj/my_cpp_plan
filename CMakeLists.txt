@@ -4,4 +4,4 @@ project(my_leetcode_plan)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 
-add_executable(out  dp/583_minDistance.cpp dp/712_minimumDeleteSum.cpp)
+add_executable(out  dp/516_longestPalindromeSubseq.cpp)

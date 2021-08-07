@@ -18,6 +18,7 @@ public:
         int cur_end = 0, next_end = 0;
         int n = clips.size();
         int i = 0;
+        // 区间处理容易出错
         while (i < n && clips[i][0] <= cur_end) {
             while (i < n && clips[i][0] <= cur_end) {
                 next_end = max(next_end, clips[i][1]);

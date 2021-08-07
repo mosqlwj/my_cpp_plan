@@ -4,4 +4,4 @@ project(my_leetcode_plan)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 
-add_executable(out  greedy/1024_videoStitching.cpp)
+add_executable(out  greedy/1024_videoStitching.cpp greedy/55_canJump.cpp)

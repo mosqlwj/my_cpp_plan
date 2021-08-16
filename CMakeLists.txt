@@ -8,7 +8,6 @@ add_executable(out
 #        ./cpp_primer/chap13/message.cpp
 #        ./cpp_primer/chap13/folders.cpp
 #        ./cpp_primer/chap13/test_message.cpp
+#        ./cpp_primer/chap13/strvec.cpp
 
-        ./cpp_primer/chap13/strvec.cpp
-
-        )
+        dp/64_minPathSum.cpp)

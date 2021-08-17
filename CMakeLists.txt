@@ -10,4 +10,6 @@ add_executable(out
 #        ./cpp_primer/chap13/test_message.cpp
 #        ./cpp_primer/chap13/strvec.cpp
 
-        dp/64_minPathSum.cpp)
+#        dp/64_minPathSum.cpp
+        dp/174_calculateMinimumHP.cpp
+        )

@@ -13,5 +13,5 @@ add_executable(out
 #        dp/64_minPathSum.cpp
 #        dp/174_calculateMinimumHP.cpp
 #        dp/121_maxProfit.cpp
-        tree/116_connect.cpp
-        )
+#        tree/116_connect.cpp
+        tree/654_constructMaximumBinaryTree.cpp)

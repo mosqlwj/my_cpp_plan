@@ -16,5 +16,6 @@ add_executable(out
 #        tree/116_connect.cpp
 #        tree/654_constructMaximumBinaryTree.cpp
 #        tree/106_buildTree.cpp
-        tree/652_findDuplicateSubtrees.cpp
+#        tree/652_findDuplicateSubtrees.cpp
+        tree/96_numTrees.cpp
         )

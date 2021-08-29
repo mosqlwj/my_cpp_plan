@@ -2,7 +2,12 @@
 // Created by LWJ on 2021/8/29.
 //
 #include "../leetcode.h"
-
+//struct TreeNode {
+//    int val;
+//    TreeNode* left;
+//    TreeNode* right;
+//    TreeNode(int val) : val(val), left(nullptr), right(nullptr){}
+//};
 class Solution {
 public:
     int sum = 0;

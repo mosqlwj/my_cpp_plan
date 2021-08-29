@@ -23,4 +23,12 @@ public:
         }
         dfs(root->right, k);
     }
+
+    void dfs2(TreeNode* root, vector<int>& res) {
+        if (root == nullptr)
+            return;
+        dfs2(root->left, res);
+        res.push_back(root->val);
+        dfs2(root->right, res);
+    }
 };

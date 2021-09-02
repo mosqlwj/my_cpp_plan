@@ -18,5 +18,6 @@ add_executable(out
 #        tree/652_findDuplicateSubtrees.cpp
 #        tree/96_numTrees.cpp
 #        tree/95_generateTrees.cpp
-        tree/116_connect.cpp
+#        tree/116_connect.cpp
+        tree/101_isSymmetric.cpp
         )

@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/mnt/d/workspace/my_leetcode_plan/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9     -std=c++11 -g   -o CMakeFiles/out.dir/tree/101_isSymmetric.cpp.o -c /mnt/d/workspace/my_leetcode_plan/tree/101_isSymmetric.cpp",
-  "file": "/mnt/d/workspace/my_leetcode_plan/tree/101_isSymmetric.cpp"
-}
-]

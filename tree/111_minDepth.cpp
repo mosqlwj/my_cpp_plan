@@ -6,19 +6,54 @@
 
 class Solution {
 public:
-    // DFS
+    // DFS 详细代码：根左右
     int minDepth(TreeNode* root) {
+        if (root == nullptr)
+            return 0;
+        if (root->left == nullptr && root->right == nullptr)
+            return 1;
+        int left  = minDepth(root->left);
+        int right = minDepth(root->right);
+        // 当左子树为空，右子树不为空时，返回右子树最小深度 + 1
+        int res = 0;
+        if (root->left == nullptr && root->right != nullptr) {
+            res = right + 1;
+        }
+        // 当右子树为空，左子树不为空时，返回左子树最小深度 + 1
+        if (root->left != nullptr && root->right == nullptr) {
+            res = left + 1;
+        }
+        // 当左右子树都不为空时
+        if (root->left && root->right) {
+            res = min(left, right) + 1;
+        }
+        return res;
+    }
+    // 简化代码
+    int minDepth1_2(TreeNode* root) {
         if (root == nullptr)
             return 0;
 
         if (root->left == nullptr && root->right == nullptr)
             return 1;
-        int left  = minDepth(root->left);
-        int right = minDepth(root->right);
+        int left  = minDepth1_2(root->left);
+        int right = minDepth1_2(root->right);
         if (root->left == nullptr || root->right == nullptr)
             return left + right + 1;
         return min(left, right) + 1;
     }
+    // 错误代码.
+    // 错误原因在于：最小深度是从根节点到最近叶子节点的最短路径上的节点数量，是叶子节点。
+    //
+    int minDepth1_1(TreeNode* root) {
+        if (root == nullptr)
+            return 0;
+        int left = minDepth1_1(root->left);
+        int right = minDepth1_1(root->right);
+        return min(left, right) + 1;
+    }
+
+
     // BFS
     int minDepth2(TreeNode* root) {
         if (root == NULL) return 0;

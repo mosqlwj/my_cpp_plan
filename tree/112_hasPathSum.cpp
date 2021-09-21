@@ -6,7 +6,7 @@
 
 class Solution {
 public:
-    // 普通DFS
+    // 普通preorder DFS
     bool hasPathSum1(TreeNode* root, int targetSum) {
         if (root == nullptr)
             return false;

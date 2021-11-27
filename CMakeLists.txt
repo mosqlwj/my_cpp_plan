@@ -3,21 +3,15 @@ project(my_leetcode_plan)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+# set(ICTEST_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/src/include)
+# include_directories(${ICTEST_INCLUDE_DIR})
 
-add_executable(out
-#        ./cpp_primer/chap13/message.cpp
-#        ./cpp_primer/chap13/folders.cpp
-#        ./cpp_primer/chap13/test_message.cpp
-#        ./cpp_primer/chap13/strvec.cpp
 
-#        dp/64_minPathSum.cpp
-#        dp/174_calculateMinimumHP.cpp
-#        dp/121_maxProfit.cpp
-#        tree/654_constructMaximumBinaryTree.cpp
-#        tree/106_buildTree.cpp
-#        tree/652_findDuplicateSubtrees.cpp
-#        tree/96_numTrees.cpp
-#        tree/95_generateTrees.cpp
-#        tree/116_connect.cpp
-        # tree/101_isSymmetric.cpp
-        )
+
+# static link lib
+# add_subdirectory(thirdparty)
+
+aux_source_directory(cpp_primer/chap15 SRC)
+add_executable(out ${SRC})
+
+# target_link_libraries(ictest thirdparty)

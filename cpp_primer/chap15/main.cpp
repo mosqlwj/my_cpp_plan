@@ -9,6 +9,9 @@ void Test_StrBlob() {
     // sb.push_back("nihao");
     string res = sb.front();
     cout << sb.front() << endl;
+    for (auto it = sb.begin(); neq(it, sb.end()); it.incr()) {
+        cout << it.deref() << endl;
+    }
 
 }
 

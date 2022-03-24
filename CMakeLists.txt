@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(my_leetcode_plan)
+project(my_cpp_plan)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
@@ -11,7 +11,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 # static link lib
 # add_subdirectory(thirdparty)
 
-aux_source_directory(cpp_primer/chap15 SRC)
-add_executable(out ${SRC})
-
+#aux_source_directory(cpp_primer/chap15 SRC)
+#add_executable(out ${SRC})
+add_executable(out main.cpp)
 # target_link_libraries(ictest thirdparty)

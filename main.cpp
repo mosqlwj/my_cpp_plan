@@ -4,6 +4,6 @@
 #include <iostream>
 using namespace std;
 int main() {
-    cout << "hello leetcode" << endl;
+    cout << "hello my cpp plan" << endl;
     return 0;
 }

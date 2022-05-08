@@ -81,3 +81,15 @@ target_link_libraries( hello_binary
 >set(CMAKE_BUILD_TYPE Debug CACHE STRING "set build type to debug")     # CMakeLists.txt中指定
 * 或者
 > cmake .. -D CMAKE_BUILD_TYPE="Debug"   # 生成时命令行指定
+
+## 8. 第三方库文件
+> 系统中安装的第三方库可以通过 find_package 找到，像之前的 libanswer 一样链接：
+~~~
+find_package(CURL REQUIRED)
+target_link_libraries(libanswer PRIVATE CURL::libcurl)
+~~~
+> REQUIRED 表示 CURL 是必须的依赖，如果没有找到，会报错。
+
+> PRIVATE 表示“链接 CURL::libcurl”是 libanswer 的私有内容，不应对使用 libanswer 的 target 产生影响，注意和 PUBLIC 的区别。
+
+> CURL 和 CURL::libcurl 是约定的名字，其它第三方库的包名和 library 名可在网上查。

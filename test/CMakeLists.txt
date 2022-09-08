@@ -1,10 +1,5 @@
-
-#add_executable(traffic_simulation_test ./TrafficSimulation_Test.cpp)
-#
-#target_link_libraries(traffic_simulation_test traffic_simulation_lib)
-#
-#add_test(NAME traffic_simulation_test COMMAND traffic_simulation_test)
-
+# add uint test
+# define function
 function(cpp_test test_file link_file)
     # get file name
     get_filename_component(test_target_name ${test_file} NAME_WE)
@@ -13,4 +8,9 @@ function(cpp_test test_file link_file)
     add_test(NAME ${test_target_name} COMMAND ${test_target_name})
 endfunction(cpp_test)
 
-cpp_test(TrafficSimulation_Test.cpp traffic_simulation_lib)
+#add_executable(demo_test demo_test.cpp)
+#target_link_libraries(demo_test solution)
+#add_test(NAME demo_test COMMAND demo_test)
+
+cpp_test(TestTrafficSimulation.cpp traffic_simulation_lib)
+
